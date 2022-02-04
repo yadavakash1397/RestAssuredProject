@@ -54,10 +54,10 @@ public class POST_Req
         Assert.assertEquals(headervalue,"cloudflare");
 
         //6.pass aunthentication
-        PreemptiveBasicAuthScheme auth=new PreemptiveBasicAuthScheme();
-        auth.setUserName("");
-        auth.setPassword("");
-        RestAssured.authentication=auth;
+//        PreemptiveBasicAuthScheme auth=new PreemptiveBasicAuthScheme();
+//        auth.setUserName("");
+//        auth.setPassword("");
+//        RestAssured.authentication=auth;
 
 
 

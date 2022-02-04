@@ -11,19 +11,19 @@ import org.testng.annotations.Test;
 public class demo1_GET_Req
 {
     @Test
-    public void getWeatherDetails()
+    public void getrequestvalidation()
     {
         String statusLine="HTTP/1.1 200 OK";
         int statusCode=200;
 
         //URl set
-        RestAssured.baseURI="https://restapi.demoqa.com/utilities/weather/city";
+        RestAssured.baseURI="https://reqres.in";
 
         //create req object with URL
        RequestSpecification req=RestAssured.given();
 
        //send GET request and save response
-        Response res=req.request(Method.GET,"/Hyderabad");
+        Response res=req.request(Method.GET,"/api/users?page=2");
 
         //validate response status code
         System.out.println("Response code:"+res.getStatusCode());

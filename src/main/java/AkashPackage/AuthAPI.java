@@ -21,12 +21,12 @@ public class AuthAPI
         JSONObject jsonObject=new JSONObject();
         jsonObject.put("name", "ak");
         jsonObject.put("gender", "male");
-        jsonObject.put("email", "ak13@gmail.com");
+        jsonObject.put("email", "ak134@gmail.com");
         jsonObject.put("status", "active");
         reqobj.body(jsonObject.toJSONString());
 
         Response response=reqobj.request(Method.POST,"users");
-        System.out.println(response.getBody().toString());
+        System.out.println(response.getBody().asString());
         Assert.assertEquals(response.getStatusCode(),201);
 
     }
